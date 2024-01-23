@@ -1,0 +1,31 @@
+@import '../config';
+
+.header {
+	position: relative;
+	background-color: $header-bg-color;
+	padding: 2rem 0;
+	@media screen and (max-width: $hamburger-breakpoint) {
+		z-index: 1010;
+	}
+
+	.header__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.headerLogo {
+	.headerLogo__image {
+		max-width: 200px;
+		width: 100%;
+	}
+}
+
+.headerNavigation {
+	.navigation {
+		@media screen and (max-width: $hamburger-breakpoint) {
+			display: none;
+		}
+	}
+}
